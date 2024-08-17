@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+scrollbar-color:#BC1B95; 
+}
+
+body{
+    width: 100%;
+    height: 610vh;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #B5189A;
+    border-radius: 20px ;
+}
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 100;
+}
+
+nav h1{
+    margin-left: 60px;
+    font-size: 30px;
+    color: #BC1B95;
+}
+
+nav h1 span{
+    color: #6904C6;
+    text-decoration: underline;
+}
+
+nav ul{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    margin-right: 18px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+color: #BC1B95;
+}
+
+nav .h-sh-p{
+margin-right: 60px;
+transition: all 0.6s ease;
+}
+
+nav .h-sh-p i{
+    transition: all 0.6s ease;
+}
+
+nav .h-sh-p i:hover{
+color: #BC1B95;
+}
+
+/*..header..*/
+
+
+header{
+   
+width: 90vh;
+height:90vh;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+margin-left: 200px;
+
+}
+
+header .circle-bg{
+    width: 1800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+header .shoes-header{
+    position: absolute;
+    right: 200px;
+    top: 160px;
+}
+
+header h1 em{
+    color: #B5189A;
+    font-size: 80px;
+    font-family: 'Caveat', cursive;
+}
+
+header h1 .collection{
+    font-size: 70px;
+    color:#B5189A;
+}
+
+header p{
+    margin-top: 40px;
+    margin-bottom: 170px;
+    width: 600px;
+    line-height: 20px;
+}
+
+header .icon-social{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .icon-social i{
+    margin-top: 10px;
+    transition: all 0.6s ease;
+}
+
+header .icon-social i:hover{
+    color: #B5189A;
+}
+
+header button{
+    font-size: 20px;
+    padding: 10px 18px;
+    background:linear-gradient(#B5189A,#6904C6);
+   border: none;
+   border-radius: 21px;
+    color: #fff;
+}
+
+header button i{
+    transition: transform 0.5s ease;
+}
+
+
+header button:hover i{
+    transform: translateX(10px);
+}
+
+
+/*..products*/
+
+.products{
+margin-top: 180px;
+padding-top: 70px;
+}
+
+.products h1{
+    font-size: 65px;
+    background: linear-gradient(to right, #B2199C, #8C0FB3, #7101D1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+    text-align: center;
+}
+
+.products .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 350px;
+    height: 470px;
+    box-shadow: 0px 2px 15px #7410d3;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.products .container img{
+    width: 200px;
+    top: 125vh;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.products .container:hover img{
+    transform: scale(1.1)
+}
+
+.products .container h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.products .container p{
+    width: 250px;
+    text-align: center;
+    color: lightgrey;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.products .container span{
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.products .container .products-star{
+    color: orange;
+    margin-bottom: 6px;
+}
+
+.products .container button{
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    background:linear-gradient(to right,#B5189A, #960BBB,#7410d3  ) ;
+}
+
+.products .container .motion-product {
+    display: flex;
+    position: absolute;
+    margin-right: 240px;
+    margin-bottom: 360px;
+    flex-direction: column;
+   transform: translateX(-20px);
+   transition: 0.3s;
+   cursor: pointer;
+   opacity: 0;
+}
+
+.motion-product i{
+    border-radius: 6px;
+    display: block;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+.products .container:hover .motion-product{
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.product-shoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-shoes .container{
+    margin-bottom: 25px;
+}
+
+.products .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 350px;
+    height: 470px;
+    box-shadow: 0px 2px 15px #7410d3;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.products .container1 img{
+    width: 200px;
+    top: 180vh;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.products .container1:hover img{
+    transform: scale(1.1)
+}
+
+.products .container h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.products .container1 p{
+    width: 250px;
+    text-align: center;
+    color: lightgrey;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.products .container1 span{
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.products .container1 .products-star{
+    color: orange;
+    margin-bottom: 6px;
+}
+
+.products .container1 button{
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    background:linear-gradient(to right,#B5189A, #960BBB,#7410d3  ) ;
+}
+
+.products .container1 .motion-product {
+    display: flex;
+    position: absolute;
+    margin-right: 240px;
+    margin-bottom: 360px;
+    flex-direction: column;
+   transform: translateX(-20px);
+   transition: 0.3s;
+   cursor: pointer;
+   opacity: 0;
+}
+
+.motion-product i{
+    border-radius: 6px;
+    display: block;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+.products .container1:hover .motion-product{
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+
+/*..WEB ABOUT..*/
+
+
+.web-about{
+    margin-top: 100px;
+    padding: 90px;
+}
+
+.web-about h1{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.web-about h1 span{
+    background: linear-gradient(to right, #B2199C, #8C0FB3, #7101D1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+
+
+ .container-web{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-about .container-web .shoes-directions{
+display: flex;
+flex-direction: column;
+}
+
+.web-about .container-web .shoes-directions img{
+    width: 155px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background: linear-gradient(to right,#8E3FDC,  #BD48B5);
+    border-radius: 7px;
+    opacity: 0.80;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+.web-about .container-web .shoes-directions img:hover{
+    opacity: 1;
+}
+
+.web-about .special{
+width: 600px;
+height: 500px;
+box-shadow: 1px 3px 20px #551DA9;
+border-radius: 14px;
+border-style: solid;
+border-color: #551DA9;
+margin-right: 150px;
+}
+
+.web-about .container-web .lorem-web{
+    width: 590px;
+    padding: 20px 30px;
+    box-shadow: 1px 3px 20px #A14586;
+    border-color: #A14586;
+    border-style: solid;
+    line-height: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #785697,#B2199C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.web-about .shop-now-web{
+padding: 10px 20px;
+box-shadow:1px 3px 8px #B2199C;
+border: 2px solid #B2199C;
+position: absolute;
+right: 45%;
+margin-top: 40px;
+font-size: 20px;
+}
+
+
+/*..review..*/
+
+.review-grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80vh;
+}
+
+
+.review h1{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.review h1 span{
+    background: linear-gradient(to right, #B2199C, #8C0FB3, #7101D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+}
+
+.review .review-container{
+    width: 450px;
+    height: 300px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    margin-left: 60px;
+}
+
+.review .review-container .header img{
+    width: 80px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.review .review-container .header {
+    display: flex;
+align-items: center;
+
+}
+
+.review .review-container .header .header-starh2 .stars-review{
+    color: orange;
+}
+
+.review .review-container .header img:hover{
+    transform: scale(1.1);
+}
+
+/*...services...*/
+
+.services{
+    padding-top: 70px;
+}
+
+.services h1{
+text-align: center;
+font-size: 70px;
+}
+
+.services h1 span{
+    background: linear-gradient(to right, #B2199C, #8C0FB3, #7101D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services .icons-services{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 28%;
+    margin-top: 4%;
+    margin-right: 60px;
+}
+
+.services .icons-services i{
+    color: orange;
+   font-size: 60px;
+   margin-bottom: 18px;
+}
+
+.services .icons-services p{
+    width: 200px;
+    margin-top: 15px;
+    color: lightgray;
+}
+
+
+/*login*/
+
+.login{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg{
+    position: absolute;
+    z-index: -1;
+    width: 1900px;
+}
+
+.welcom-back{
+    display: flex;
+    flex-direction: column;
+}
+
+.welcom-back em{
+    font-family: 'Shadows Into Light', cursive;
+font-size: 45px;
+margin-bottom: 50px;
+}
+
+.welcom-back input{
+    margin-bottom: 15px;
+    padding: 7px 30px;
+    border-style: solid;
+    border-color: #775698;
+    border-radius: 7px;
+    background-color: transparent;
+   
+}
+.welcom-back label{
+    margin-bottom: 10px;
+}
+
+
+.welcom-back #user{
+   margin-bottom: -23px;
+   margin-left: 10px;
+   color:#C41A98 ;
+}
+
+.welcom-back a{
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.welcom-back button{
+    padding: 10px 0;
+    background: linear-gradient(to right, #B2199C, #8C0FB3, #7101D1);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.icons-login img{
+    width: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+.icons-login{
+    text-align: center;
+    margin-top: 20px;
+}
